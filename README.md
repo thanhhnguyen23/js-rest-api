@@ -1,4 +1,12 @@
-# Create New Tutorial
+# JS-REST-API
+---
+
+## Technologies Used
+* nodejs
+* express
+* mongodb
+
+## Create New Tutorial
 ```
 curl --location --request POST 'http://localhost:8080/api/tutorials' \
 --header 'Content-Type: application/json' \
@@ -8,17 +16,17 @@ curl --location --request POST 'http://localhost:8080/api/tutorials' \
 }'
 ```
 
-# List Tutorials
+## List Tutorials
 ```
 curl localhost:8080/api/tutorials | jq .
 ```
 
-# Retrieve a Tutorial by Id
+## Retrieve a Tutorial by Id
 ```
 curl --location --request GET 'http://localhost:8080/api/tutorials/5e8182b0cca412687e3a9ddb'
 ```
 
-# Update Tutorial by Id
+## Update Tutorial by Id
 ```
 curl --location --request PUT 'http://localhost:8080/api/tutorials/5e8182b0cca412687e3a9ddb' \
 --header 'Content-Type: application/json' \
@@ -28,17 +36,17 @@ curl --location --request PUT 'http://localhost:8080/api/tutorials/5e8182b0cca41
 }'
 ```
 
-# Retrieve only published Tutorials
+## Retrieve only published Tutorials
 ```
 curl --location --request GET 'http://localhost:8080/api/tutorials/published'
 ```
 
-# Find Tutorials by title string
+## Find Tutorials by title string
 ```
 curl --location --request GET 'http://localhost:8080/api/tutorials?title=InputSearchStringHere
 ```
 
-# Delete Tutorial by Id
+## Delete Tutorial by Id
 ```
 curl --location --request DELETE 'http://localhost:8080/api/tutorials/5e818642cca412687e3a9dde' \
 --header 'Content-Type: application/json' \
@@ -48,7 +56,7 @@ curl --location --request DELETE 'http://localhost:8080/api/tutorials/5e818642cc
 }'
 ```
 
-# Delete All Tutorials
+## Delete All Tutorials
 ```
 curl --location --request DELETE 'http://localhost:8080/api/tutorials/'
 ```
